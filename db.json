@@ -2,14 +2,14 @@
     "users": [
       {
         "id": 1,
-        "username": "admin",
-        "password": "admin",
+        "username": "aniket",
+        "password": "123",
         "role": "admin"
       },
       {
         "id": 2,
-        "username": "user",
-        "password": "user",
+        "username": "rohit",
+        "password": "1234",
         "role": "user"
       }
     ]

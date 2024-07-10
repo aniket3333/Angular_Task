@@ -14,6 +14,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) {}
 
   login(username: string, password: string): Observable<any> {
+    debugger
     return this.http.get<any[]>(`${this.apiUrl}?username=${username}&password=${password}`)
       .pipe(tap(users => {
         if (users.length) {
