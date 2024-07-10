@@ -21,7 +21,6 @@ export class AuthService {
         if (users.length) {
           this.currentUser = users[0];
           localStorage.setItem('user', JSON.stringify(this.currentUser));
-          console.log('curr',this.currentUser);
         }
       }));
   }
@@ -36,9 +35,7 @@ export class AuthService {
   }
 
   getCurrentUser() {
-    if (!this.currentUser) {
       this.currentUser = JSON.parse(localStorage.getItem('user')!);
-    }
-    return this.currentUser;
+      return this.currentUser;
   }
 }

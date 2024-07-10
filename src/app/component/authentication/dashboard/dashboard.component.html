@@ -1,1 +1,32 @@
-<h1>ajhsjahs</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+<div class="d-flex">
+    <h1>Welcome {{user ? user.username : 'John Doy'}}</h1>
+</div>
+                </div>
+                <div class="card-body">
+<div class="row" *ngIf="user.role == 'admin'">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-md btn-primary" [routerLink]="['/admin']">User panel</button> |         <button type="button" class="btn btn-md btn-primary" [routerLink]="['/course']">Course panel</button>
+    </div>
+    
+</div>
+<div class="row" *ngIf="user.role == 'user'">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-md btn-primary" [routerLink]="['/course']">Course panel</button>
+    </div>    
+    <div class="col-sm-4"></div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
