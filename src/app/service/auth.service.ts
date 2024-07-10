@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { UserModel } from '../model/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,17 +14,17 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  login(username: string, password: string): Observable<any> {
+  login(userModel:UserModel): Observable<any> {
     debugger
-    return this.http.get<any[]>(`${this.apiUrl}?username=${username}&password=${password}`)
+    return this.http.get<any[]>(`${this.apiUrl}?username=${userModel.email}&password=${userModel.password}`)
       .pipe(tap(users => {
         if (users.length) {
           this.currentUser = users[0];
           localStorage.setItem('user', JSON.stringify(this.currentUser));
+          console.log('curr',this.currentUser);
         }
       }));
   }
-
   logout() {
     this.currentUser = null;
     localStorage.removeItem('user');

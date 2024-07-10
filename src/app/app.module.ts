@@ -8,6 +8,7 @@ import { RegisterComponent } from './component/authentication/registration/regis
 import { DashboardComponent } from './component/authentication/dashboard/dashboard.component';
 import { AdminComponent } from './component/users/admin/admin.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+   ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
