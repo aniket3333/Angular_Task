@@ -1,17 +1,34 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "aniket",
-        "password": "123",
-        "role": "admin"
-      },
-      {
-        "id": 2,
-        "username": "rohit",
-        "password": "1234",
-        "role": "user"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "username": "aniket",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "rohit",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "shu",
+      "password": "12",
+      "role": "user"
+    },
+    {
+      "id": 0,
+      "username": "sonal",
+      "password": "12345",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "shubham",
+      "password": "12",
+      "role": "user"
+    }
+  ]
+}

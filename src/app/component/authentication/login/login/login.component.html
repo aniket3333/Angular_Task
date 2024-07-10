@@ -15,7 +15,7 @@
                     <h2 class="fw-bold text-uppercase pb-2">Login</h2>
       <form [formGroup]="userForm" (ngSubmit)="login()">
                     <div data-mdb-input-init class="form-outline form-white mb-3">
-                      <input type="email" id="typeEmailX" class="form-control form-control-lg" formControlName="email" />
+                      <input type="string" id="typeEmailX" class="form-control form-control-lg" formControlName="username" />
                       <label class="form-label" for="typeEmailX">Email</label>
                     </div>
       
@@ -36,8 +36,8 @@
                   </div>
       
                   <div>
-                    <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
-                    </p>
+                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" (click)="register()">Sign Up</button>
+                  
                   </div>
       
                 </div>

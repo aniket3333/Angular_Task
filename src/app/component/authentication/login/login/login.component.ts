@@ -32,4 +32,9 @@ ngOnInit(){
     });
   }
 
+  register()
+  {
+    this.router.navigate(['/register']);
+  }
+
 }

@@ -5,8 +5,9 @@ export class UserFormModel extends FormGroup{
     constructor(){
         super({
             id : new FormControl(0),
-            email :new FormControl('',[Validators.required,Validators.email]),
-            password : new FormControl('',[Validators.required,Validators.min(2)])
+            username :new FormControl('',[Validators.required]),
+            password : new FormControl('',[Validators.required,Validators.min(2)]),
+            role:new FormControl('')
         })
     }
 
@@ -14,8 +15,9 @@ export class UserFormModel extends FormGroup{
     getFormData():UserModel{
 let model = new UserModel();
 model.id = this.get('id').value ?? 0;
-model.email= this.get('email').value ?? '';
+model.username= this.get('username').value ?? '';
 model.password = this.get('password').value ?? '';
+model.role = this.get('role').value ?? '';
 return model;
     }
     //#endregion
@@ -23,8 +25,9 @@ return model;
     //#region SetData
 setFormData(model:UserModel){
 this.get('id').setValue(model.id);
-this.get('email').setValue(model.email);
+this.get('username').setValue(model.username);
 this.get('password').setValue(model.password);
+this.get('role').setValue(model.role);
 }
     //#endregion
 }

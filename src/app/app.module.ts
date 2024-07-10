@@ -10,6 +10,8 @@ import { AdminComponent } from './component/users/admin/admin.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CourseComponent } from './component/courses/course/course.component';
+import { UserListComponent } from './component/users/user-list/user-list/user-list.component';
+import { EditUserComponent } from './component/users/edit-user/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CourseComponent } from './component/courses/course/course.component';
     RegisterComponent,
     DashboardComponent,
     AdminComponent,
-    CourseComponent
+    CourseComponent,
+    UserListComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

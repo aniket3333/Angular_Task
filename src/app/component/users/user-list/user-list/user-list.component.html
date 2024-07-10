@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex">
+                    <h1>ALL Users</h1>
+                </div>
+              
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-8 offset-2">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Password</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let user of allUser">
+                                <td>{{user.id}}</td>
+                                <td>{{user.username}}</td>
+                                <td>{{user.role}}</td>
+                                <td>{{user.password}}</td>
+                                <td><button type="button" class="btn btn-md btn-primary" (click)="edit(user.id)">Edit</button></td>
+                            </tr>
+                          </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

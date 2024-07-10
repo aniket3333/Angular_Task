@@ -16,7 +16,7 @@ export class AuthService {
 
   login(userModel:UserModel): Observable<any> {
     debugger
-    return this.http.get<any[]>(`${this.apiUrl}?username=${userModel.email}&password=${userModel.password}`)
+    return this.http.get<any[]>(`${this.apiUrl}?username=${userModel.username}&password=${userModel.password}`)
       .pipe(tap(users => {
         if (users.length) {
           this.currentUser = users[0];
