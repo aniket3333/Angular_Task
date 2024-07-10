@@ -19,16 +19,22 @@
       "role": "user"
     },
     {
-      "id": 0,
+      "id": 4,
       "username": "sonal",
       "password": "12345",
       "role": "user"
     },
     {
-      "id": 3,
+      "id": 5,
       "username": "shubham",
       "password": "12",
       "role": "user"
+    },
+    {
+      "id": 1,
+      "username": "aniket",
+      "password": "123",
+      "role": "admin"
     }
   ]
 }

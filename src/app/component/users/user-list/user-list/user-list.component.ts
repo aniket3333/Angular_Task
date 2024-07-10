@@ -31,4 +31,12 @@ this.getUser();
       queryParams:{userId:id}
     });
   }
+
+  delete(id:any)
+  {
+   this.allUser =  this.allUser.filter(x=>x.id != id);
+  
+  }
+
+
 }
