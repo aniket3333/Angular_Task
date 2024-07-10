@@ -37,24 +37,36 @@
       "role": "admin"
     }
   ],
-"courses":[
-  {
-    "id": 1,
-    "coursename": "coding ninja",
-    "desc": "html,css,js,python",
-    "price": "20$"
-  },
-  {
-    "id": 1,
-    "coursename": "coding ninja",
-    "desc": "html,css,js,python",
-    "price": "20$"
-  },
-  {
-    "id": 1,
-    "coursename": "coding ninja",
-    "desc": "html,css,js,python",
-    "price": "20$"
-  }
-]
+  "courses": [
+    {
+      "id": 1,
+      "coursename": "coding ninja",
+      "desc": "html,css,js,python",
+      "price": "20$"
+    },
+    {
+      "id": 2,
+      "coursename": "coding ninja",
+      "desc": "html,css,js,python",
+      "price": "20$"
+    },
+    {
+      "id": 3,
+      "coursename": "coding ninja",
+      "desc": "html,css,js,python",
+      "price": "20$"
+    },
+    {
+      "id": 4,
+      "coursename": "coding ninja",
+      "desc": "html,css,js,python,angular",
+      "price": "20$"
+    },
+    {
+      "id": 5,
+      "coursename": "scaler",
+      "desc": "html,css,js,python,angular",
+      "price": "234$"
+    }
+  ]
 }

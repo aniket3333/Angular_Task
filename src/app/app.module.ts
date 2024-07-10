@@ -12,6 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CourseComponent } from './component/courses/course/course.component';
 import { UserListComponent } from './component/users/user-list/user-list/user-list.component';
 import { EditUserComponent } from './component/users/edit-user/edit-user/edit-user.component';
+import { CourseListComponent } from './component/courses/course-list/course-list/course-list.component';
+import { EditCourseComponent } from './component/courses/edit-course/edit-course/edit-course.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { EditUserComponent } from './component/users/edit-user/edit-user/edit-us
     AdminComponent,
     CourseComponent,
     UserListComponent,
-    EditUserComponent
+    EditUserComponent,
+    CourseListComponent,
+    EditCourseComponent
   ],
   imports: [
     BrowserModule,

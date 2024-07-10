@@ -8,6 +8,8 @@ import { DashboardComponent } from './component/authentication/dashboard/dashboa
 import { AdminComponent } from './component/users/admin/admin.component';
 import { CourseComponent } from './component/courses/course/course.component';
 import { UserListComponent } from './component/users/user-list/user-list/user-list.component';
+import { EditCourseComponent } from './component/courses/edit-course/edit-course/edit-course.component';
+import { CourseListComponent } from './component/courses/course-list/course-list/course-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -16,7 +18,10 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'course', component: CourseComponent },
-  { path: 'user-list', component: UserListComponent }
+  { path: 'user-list', component: UserListComponent },
+  { path: 'edit-course', component: EditCourseComponent },
+  { path: 'courselist', component: CourseListComponent },
+
 ];
 
 @NgModule({
