@@ -14,6 +14,7 @@ import { UserListComponent } from './component/users/user-list/user-list/user-li
 import { EditUserComponent } from './component/users/edit-user/edit-user/edit-user.component';
 import { CourseListComponent } from './component/courses/course-list/course-list/course-list.component';
 import { EditCourseComponent } from './component/courses/edit-course/edit-course/edit-course.component';
+import { AllcourseComponent } from './component/users/course-for-user/allcourse/allcourse.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EditCourseComponent } from './component/courses/edit-course/edit-course
     UserListComponent,
     EditUserComponent,
     CourseListComponent,
-    EditCourseComponent
+    EditCourseComponent,
+    AllcourseComponent
   ],
   imports: [
     BrowserModule,

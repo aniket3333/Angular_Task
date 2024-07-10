@@ -10,6 +10,7 @@ import { CourseComponent } from './component/courses/course/course.component';
 import { UserListComponent } from './component/users/user-list/user-list/user-list.component';
 import { EditCourseComponent } from './component/courses/edit-course/edit-course/edit-course.component';
 import { CourseListComponent } from './component/courses/course-list/course-list/course-list.component';
+import { AllcourseComponent } from './component/users/course-for-user/allcourse/allcourse.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   { path: 'edit-course', component: EditCourseComponent },
   { path: 'courselist', component: CourseListComponent },
+  { path: 'allcourseforuser', component: AllcourseComponent },
 
 ];
 
