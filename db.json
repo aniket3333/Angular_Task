@@ -36,5 +36,25 @@
       "password": "123",
       "role": "admin"
     }
-  ]
+  ],
+"courses":[
+  {
+    "id": 1,
+    "coursename": "coding ninja",
+    "desc": "html,css,js,python",
+    "price": "20$"
+  },
+  {
+    "id": 1,
+    "coursename": "coding ninja",
+    "desc": "html,css,js,python",
+    "price": "20$"
+  },
+  {
+    "id": 1,
+    "coursename": "coding ninja",
+    "desc": "html,css,js,python",
+    "price": "20$"
+  }
+]
 }
