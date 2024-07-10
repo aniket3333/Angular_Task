@@ -4,24 +4,27 @@
             <div class="card">
                 <div class="card-header">
 <div class="d-flex">
-    <h1>Welcome {{user ? user.username : 'John Doy'}}</h1>
+    <h1 *ngIf="user.role=='admin'">Welcometo admin panel  -  {{user ? user.username : 'John Doy'}}</h1>
+    <h1 *ngIf="user.role=='user'">Welcometo   -  {{user ? user.username : 'John Doy'}}</h1>
 </div>
                 </div>
                 <div class="card-body">
 <div class="row" *ngIf="user.role == 'admin'">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
         <button type="button" class="btn btn-md btn-primary" [routerLink]="['/user-list']">User panel</button> |  <button type="button" class="btn btn-md btn-primary" [routerLink]="['/courselist']">Course panel</button> |         <button type="button" class="btn btn-md btn-primary" [routerLink]="['/allcourseforuser']">Course User View</button>
 
     </div>
+    <div class="col-sm-6"></div>
+
     
 </div>
 <div class="row" *ngIf="user.role == 'user'">
     <div class="col-sm-4">
     </div>
     <div class="col-sm-4">
-        <button type="button" class="btn btn-md btn-primary" [routerLink]="['/allcourseforuser']">Course panel</button>
+        <button type="button" class="btn btn-md btn-primary" [routerLink]="['/allcourseforuser']">See all course</button>
     </div>    
     <div class="col-sm-4"></div>
 

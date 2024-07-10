@@ -67,6 +67,18 @@
       "coursename": "scaler",
       "desc": "html,css,js,python,angular",
       "price": "234$"
+    },
+    {
+      "id": 0,
+      "coursename": "sdaemon",
+      "desc": "angular..net",
+      "price": "2345"
+    },
+    {
+      "id": 5,
+      "coursename": "scalersss",
+      "desc": "html,css,js,python,angular",
+      "price": "234$"
     }
   ]
 }

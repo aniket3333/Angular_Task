@@ -38,5 +38,10 @@ this.getUser();
   
   }
 
+  addUser()
+  {
+    this.router.navigate(['/register']);
+  }
+
 
 }
