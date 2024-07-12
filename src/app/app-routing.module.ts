@@ -16,13 +16,13 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'admin', component: AdminComponent },
-  { path: 'course', component: CourseComponent },
-  { path: 'user-list', component: UserListComponent },
-  { path: 'edit-course', component: EditCourseComponent },
-  { path: 'courselist', component: CourseListComponent },
-  { path: 'allcourseforuser', component: AllcourseComponent },
+  { path: 'dashboard', component: DashboardComponent,canActivate:[AuthGuard,RoleGuard]},
+  { path: 'admin', component: AdminComponent ,canActivate:[AuthGuard]},
+  { path: 'course', component: CourseComponent,canActivate:[AuthGuard] },
+  { path: 'user-list', component: UserListComponent,canActivate:[AuthGuard] },
+  { path: 'edit-course', component: EditCourseComponent,canActivate:[AuthGuard]},
+  { path: 'courselist', component: CourseListComponent ,canActivate:[AuthGuard]},
+  { path: 'allcourseforuser', component: AllcourseComponent,canActivate:[AuthGuard] },
 
 ];
 

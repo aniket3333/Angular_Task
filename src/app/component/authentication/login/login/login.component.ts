@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit{
 ngOnInit(){
   this.userForm = new UserFormModel();
   this.user = new UserModel();
+  localStorage.removeItem('user'); // Removes the 'user' item from localStorage
+
 
 }
   login() {

@@ -1,81 +1,99 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "aniket",
       "password": "123",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "rohit",
       "password": "1234",
       "role": "user"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "shu",
       "password": "12",
       "role": "user"
     },
     {
-      "id": 4,
+      "id": "4",
       "username": "sonal",
       "password": "12345",
       "role": "user"
     },
     {
-      "id": 5,
+      "id": "5",
       "username": "shubham",
       "password": "12",
       "role": "user"
     },
     {
-      "id": 1,
+      "id": "6",
       "username": "aniket",
       "password": "123",
       "role": "admin"
+    },
+    {
+      "id": "7",
+      "username": "sonalpawar",
+      "password": "sonu",
+      "role": "user"
+    },
+    {
+      "id": "7",
+      "username": "shubach",
+      "password": "sonu",
+      "role": "user"
+    },
+    {
+      "id": 0,
+      "username": "",
+      "password": "",
+      "role": ""
     }
   ],
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "coursename": "coding ninja",
       "desc": "html,css,js,python",
       "price": "20$"
     },
     {
-      "id": 2,
+      "id": "2",
       "coursename": "coding ninja",
       "desc": "html,css,js,python",
       "price": "20$"
     },
     {
-      "id": 3,
+      "id": "3",
       "coursename": "coding ninja",
       "desc": "html,css,js,python",
       "price": "20$"
     },
     {
-      "id": 4,
+      "id": "4",
       "coursename": "coding ninja",
       "desc": "html,css,js,python,angular",
       "price": "20$"
     },
     {
-      "id": 5,
+      "id": "5",
       "coursename": "scaler",
       "desc": "html,css,js,python,angular",
       "price": "234$"
     },
     {
-      "id": 0,
+      "id": "6",
       "coursename": "sdaemon",
       "desc": "angular..net",
       "price": "2345"
     },
     {
-      "id": 5,
+      "id": "7",
       "coursename": "scalersss",
       "desc": "html,css,js,python,angular",
       "price": "234$"
